@@ -34,5 +34,22 @@ set showmode
 
 " Set the color scheme.
 :colorscheme vs_code_dark
-" run this command in the color scheme folder 
-" curl -o vs_code_dark.vim https://raw.githubusercontent.com/tomasiser/vim-code-dark/master/colors/codedark.vim
+
+" STATUS LINE --------------------------------------------------------- {{{
+
+" Clear status line when vimrc is reloaded.
+set statusline=
+
+" Status line left side.
+set statusline+=\ %F\ %M\ %Y\ %R
+
+" Use a divider to separate the left side from the right side.
+set statusline+=%=
+
+" Status line right side.
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+
+" Show the status on the second to last line.
+set laststatus=2
+
+" }}}
