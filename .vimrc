@@ -33,6 +33,9 @@ set relativenumber
 set showmode
 
 " Set the color scheme.
+" The following two lines are needed for Windows operating systems?/Powershell
+set t_Co=256
+set t_ut=
 :colorscheme vs_code_dark
 
 " STATUS LINE --------------------------------------------------------- {{{
